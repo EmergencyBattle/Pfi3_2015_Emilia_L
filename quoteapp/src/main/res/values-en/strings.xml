@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quote App</string>
+
+    <string name="quote_field">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="quote_array">
+        <item>If you throw enough spaghetti on the wall something must stick!</item>
+        <item>I AM HUNGRY!!</item>
+        <item>I am tired...</item>
+    </string-array>
+
+</resources>

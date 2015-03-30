@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Quote App</string>
+
+    <string name="quote_field">Hej världen!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="quote_array">
+        <item>Om man kastar tillräckligt med spaghetti på väggen så måste ju något fastna!</item>
+        <item>JAG ÄR HUNGRIG!!</item>
+        <item>Jag är trött...</item>
+    </string-array>
+
+</resources>
