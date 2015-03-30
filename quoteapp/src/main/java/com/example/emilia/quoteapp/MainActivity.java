@@ -6,7 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
-
+import android.util.Log;
 import java.util.Random;
 
 
@@ -14,6 +14,8 @@ public class MainActivity extends ActionBarActivity {
 
     Random rand = new Random();
     int n = 0;
+
+    Log.i("MyAPP" ,"Button pressed");
 
     public void buttonOnClick (View v){
         TextView t1 = (TextView) findViewById(R.id.quote_field);
@@ -24,6 +26,8 @@ public class MainActivity extends ActionBarActivity {
         String[] quote_array = getResources().getStringArray(R.array.quote_array);
 
         t1.setText(quote_array[n]);
+
+
     }
 
     @Override
