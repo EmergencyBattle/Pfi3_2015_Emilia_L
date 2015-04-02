@@ -5,7 +5,7 @@ android {
     buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "com.example.emilia.assignment1"
+        applicationId "com.example.emilia.quoteapp"
         minSdkVersion 17
         targetSdkVersion 21
         versionCode 1

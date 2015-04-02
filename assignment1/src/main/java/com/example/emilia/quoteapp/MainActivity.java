@@ -28,8 +28,6 @@ public class MainActivity extends ActionBarActivity {
 
         Log.i("MyAPP" ,"Button pressed");
 
-
-
     }
 
     @Override
