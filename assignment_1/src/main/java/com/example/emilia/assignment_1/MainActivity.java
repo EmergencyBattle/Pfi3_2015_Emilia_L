@@ -1,5 +1,6 @@
-package com.example.emilia.quoteapp;
+package com.example.emilia.assignment_1;
 
+import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,7 +11,7 @@ import android.util.Log;
 import java.util.Random;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     Random rand = new Random();
     int n = 0;

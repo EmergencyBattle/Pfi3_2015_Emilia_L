@@ -1,4 +1,4 @@
-package com.example.emilia.quoteapp;
+package com.example.emilia.assignment_1;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
