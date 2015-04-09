@@ -1,0 +1,25 @@
+<resources>
+
+
+    <string name="titleST">Skånetrafiken</string>
+    <string name="textPlanerare">Reseplanerare</string>
+    <string name="textTidtabell">Tidtabeller</string>
+    <string name="textHallplats">Hållplatssök</string>
+    <string name="textBiljetter">Biljetter</string>
+    <string name="titleReseplaneraren">Reseplaneraren</string>
+    <string name="textFrom">Från:</string>
+    <string name="textTill">Till:</string>
+    <string name="textTimeDate">Tid/Datum</string>
+    <string name="textJustNu">Just nu</string>
+    <string name="textRedigera">Redigera</string>
+    <string name="textAnkomst">Ankomst</string>
+    <string name="textAvgang">Avgång</string>
+    <string name="textTrafikslag">Trafikslag</string>
+    <string name="textRedigera2">Redigera</string>
+    <string name="textButtonSearch">Sök</string>
+    <string name="textFavoritresor">Favoritresor</string>
+    <string name="textBevaknignar">Bevakningar</string>
+
+    <string name="action_settings">Action Settings</string>
+    <string name="app_name">assignment_2</string>
+</resources>
