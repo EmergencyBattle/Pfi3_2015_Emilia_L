@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
 
     <item android:id="@+id/info_button"
-        android:title="information"
-        app:showAsAction="always"
-        android:icon="@drawable/ic_action_help"/>
+        android:title="info"
+        android:showAsAction="always"
+        android:icon="@drawable/info_icon"/>
 
 </menu>

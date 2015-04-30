@@ -17,7 +17,7 @@ import java.util.ArrayList;
 /**
  * Created by Emilia on 23.4.2015.
  */
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment implements AdapterView.OnItemClickListener {
 
     public static ArrayList<Planet> planets = new ArrayList<Planet>();
 
@@ -43,37 +43,38 @@ public class HomeFragment extends Fragment {
         planets.add(new Planet(getResources().getString(R.string.venus_name),d,getResources().getString(R.string.venusInfo)));
 
     }
+
     @Override
     public View onCreateView(final LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
 
+        Log.i("onCreateView","started");
         final View v = inflater.inflate(R.layout.fragment_main, container, false);
         GridView gridview = (GridView) v.findViewById(R.id.gridView);
-        Log.i("yeah", " antal element " + planets.size());
 
         gridview.setAdapter(new ImageAdapter(getActivity(), planets));
 
-        gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View v,
-                                    int position, long id) {
-
-
-                InfoFragment pGF = new InfoFragment();
-
-                Bundle bundle = new Bundle();
-                bundle.putSerializable("planet",planets.get(position));
-                pGF.setArguments(bundle);
-
-                FragmentManager fm = getFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.container, pGF);
-                ft.addToBackStack(null);
-                ft.commit();
-
-            }
-
-        });
+        gridview.setOnItemClickListener(this);
+        Log.i("onCreateView", "ended");
         return v;
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View v,
+                            int position, long id) {
+
+        InfoFragment iF = new InfoFragment();
+
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("planet",planets.get(position));
+        iF.setArguments(bundle);
+
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.replace(R.id.container, iF);
+        ft.addToBackStack(null);
+        Log.i("BackStack","true");
+        ft.commit();
+
     }
 
 }
